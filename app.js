@@ -36,8 +36,6 @@ const request=https.request(url,option,function(response)
 }
 else
 {res.sendFile(__dirname+"/failure.html");
-
-    
 }
  response.on("data",function(detail)
 {
