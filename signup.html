@@ -4,53 +4,30 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.83.1">
     <title>Signin</title>
-    <link rel="stylesheet" src="/styles.css">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
-    
-
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-    <!-- Favicons -->
-    <meta name="theme-color" content="#7952b3">
 <!-- Custom styles for this template -->
-    <link href="styles.css" rel="stylesheet">
+    <link href="signup.css" rel="stylesheet">
 </head>
 
-<body class="text-center">
-
-    <main class="form-signin">
+<body ">
+    
+    <form class="form-signin">
         <form action="/" method="POST">
-            <img class="mb-4" src="https://cryptologos.cc/logos/aave-aave-logo.png" alt="" width="80" height="80">
-            <h1 class="h4 mb-4 fw-normal">Sign Up For News Letter</h1>
+            <img class="logo1" src="https://cryptologos.cc/logos/aave-aave-logo.png" alt="" width="80" height="80">
+            <h1 class="subhead">Sign Up For News Letter</h1>
 
-            <div class="form-floating">
-                <input type="name" name="fname" class="form-control" id="floatingInput" placeholder="First Name">   
-                <input type="name" name="lname" class="form-control" placeholder="Last Name" id="floatingInput">
-            </div>
-            <div class="form-floating">
-                <input type="email" name="en" class="form-control" id="floatingPassword" placeholder="Email address">
-                
-            </div>
-
-            <div class="checkbox mb-3">
+          
+                <input type="text" name="fname" class="form-control" id="floatingInput" placeholder="First Name" autofocus>   
+                <input type="text" name="lname" class="form-control" placeholder="Last Name" id="floatingInput">
+                <input type="email" name="en" class="form-control" id="floatingPassword" placeholder="Email address" >
                 <label>
-                    <input type="checkbox" value="remember-me"> Remember me
+                 <input type="checkbox" value="remember-me"> Remember me
                 </label>
-            </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-            <p class="mt-5 mb-3 text-muted">&copy; 2020–2021</p>
+            
+            <button class="desgbut" type="submit">Sign in</button>
+            <p class="mt-5 mb-3 text-muted">&copy; Astar</p>
         </form>
-      </main>
+    </form>
 </body>
 
 </html>
