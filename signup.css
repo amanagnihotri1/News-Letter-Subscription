@@ -10,7 +10,24 @@ body {
   padding: 0;
   position: relative;
   align-items: center;
-  background-color: #080000;
+  background-color: #08000046;
+background: url("https://i1.wp.com/blog.gamingmonk.com/wp-content/uploads/twin-mirror-normal-hero-background-01-ps4-us-07jun18.jpg?ssl=1");
+
+}
+.copy-cont{
+  font-family: 'Cabin',sans-serif;
+  color: #ccd9e0;
+  position: absolute;
+  top: 240px;
+  left: 140px;
+}
+.cont
+{ position: absolute;
+  top: 320px;
+  left: 150px;
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+  color: white;
 }
 body::before
 { margin:0;
@@ -58,7 +75,7 @@ input[type="email"],select
   text-align: center;
  color: #fff;
  border: 2px solid black;
- cursor: pointer;
+ 
 }
 .form-signin
 { top: 200px;
@@ -69,12 +86,15 @@ left: 130px;
 
 }
 input[type="checkbox"]
-{
+{ position: absolute;
+  top: -3px;
+  left: -140px;
   width: 20px;
-  height: 20px;
+  height: 20px; font-family:'Cabin',sans-serif ;
   margin-left: 90px;
   background-color: rgba(0, 0, 0, 0);
- font-family:'Cabin',sans-serif ;
+  font-family: 'Cabin',sans-serif;
+  color: #7aa3bd;
 }
 input::placeholder
 { 
@@ -84,4 +104,21 @@ input::placeholder
 { 
   font-family: 'Cabin', sans-serif;
   font: 400;
+}
+.desgbut
+{ width: 350px;
+  height: 35px;
+  background-color: #7aa3bd;
+  color: #080000;
+  border-radius: 9px;
+  border: 2px solid black;
+  position: absolute;
+  top: 280px;
+  left: 00px;
+}
+.copycont
+{
+  font-weight: 400;
+   font-family:'Cabin',sans-serif ;
+   color: #ffffff;
 }
