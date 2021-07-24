@@ -101,7 +101,10 @@ input::placeholder
   color: #ffffffcb;
 }
 .subhead
-{ 
+{ position: absolute;
+  margin-bottom: 20px;
+  top: 5px;
+  left: 15px;
   font-family: 'Cabin', sans-serif;
   font: 400;
 }
