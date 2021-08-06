@@ -6,27 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Signin</title>
 <!-- Custom styles for this template -->
-    <link href="signup.css" rel="stylesheet">
+    <link rel="stylesheet" href="signup.css">
 </head>
 
 <body style="display: flex;" >
     
+    <h1 class="subhead">Sign Up For News Letter</h1>
+    <div class="logoout"><img class="logo1" src="https://cryptologos.cc/logos/aave-aave-logo.png" width="80" height="80">
+    </div>
     <div class="form-signin">
-        <form action="/" method="POST">
-            <div class="logoout"><img class="logo1" src="https://cryptologos.cc/logos/aave-aave-logo.png"  width="80" height="80"></div>
-            <h1 class="subhead">Sign Up For News Letter</h1>
-
-          
-                <input type="text" name="fname" class="form-control" id="floatingInput" placeholder="First Name" autofocus>   
-                <input type="text" name="lname" class="form-control" placeholder="Last Name" id="floatingInput">
+    <form action="/" method="POST">
+                <input type="text" name="fname" class="form-control" id="floatingInput" placeholder="First Name" autocomplete="off">    
+                <input type="text" name="lname" class="form-control" placeholder="Last Name" id="floatingInput" autocomplete="off">
                 <input type="email" name="en" class="form-control" id="floatingPassword" placeholder="Email address" >
-                <label class="copy-cont">
-                 <input type="checkbox" value="remember-me" class="copy cont">Remember-me
-                </label>
-            
+               
             <button class="desgbut" type="submit">Sign in</button>
-            <p class="cont">&copy; asTar</p>
         </form>
+    <p class="cont">&copy; asTar</p>
     </div>
 </body>
 

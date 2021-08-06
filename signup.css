@@ -52,8 +52,8 @@ z-index: -1;
   width: 100px;
   height: 100px;
 position: absolute;
-top: -120px;
-left: 150px;
+top: 20px;
+left: 250px;
 justify-content: center;
 }
 input[type="text"],select
@@ -78,50 +78,42 @@ input[type="email"],select
  
 }
 .form-signin
-{ top: 200px;
+{ top: 300px;
 width: 350px;
-height: 600px;
+height: 40px;
 position: absolute;
 left: 130px;
+display: flex;
+align-items: center;
+}
+.desgbut:hover
+{ background-color: #167A83;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
 
-}
-input[type="checkbox"]
-{ position: absolute;
-  top: -3px;
-  left: -140px;
-  width: 20px;
-  height: 20px; font-family:'Cabin',sans-serif ;
-  margin-left: 90px;
-  background-color: rgba(0, 0, 0, 0);
-  font-family: 'Cabin',sans-serif;
-  color: #7aa3bd;
-}
 input::placeholder
 { 
   color: #ffffffcb;
 }
 .subhead
 { position: absolute;
-  margin-bottom: 20px;
-  top: 5px;
-  left: 15px;
+  top: 140px;
+  left: 150px;
   font-family: 'Cabin', sans-serif;
-  font: 400;
+  font-weight: 400;
+color: white;
 }
 .desgbut
-{ width: 350px;
-  height: 35px;
+{ position: absolute;
+  top:120px;
+   left:0px;
+  width: 360px;
+  height: 45px;
   background-color: #7aa3bd;
   color: #080000;
   border-radius: 9px;
   border: 2px solid black;
-  position: absolute;
-  top: 280px;
-  left: 00px;
-}
-.copycont
-{
-  font-weight: 400;
-   font-family:'Cabin',sans-serif ;
-   color: #ffffff;
+  
 }
