@@ -6,10 +6,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Signin</title>
 <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="signup.css">
-</head>
+    
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+html,
+body {
+  height: 100%;
+overflow:hidden;
+}
 
-<body style="display: flex;" >
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 200 200'%3E%3Cpolygon fill='%23DCEFFA' points='100 0 0 100 100 100 100 200 200 100 200 0'/%3E%3C/svg%3E");
+}
+.copy-cont{
+  font-family: 'Cabin',sans-serif;
+  color: #ccd9e0;
+  position: absolute;
+  top: 240px;
+  left: 140px;
+}
+
+body::before
+{ margin:0;
+  padding: 0;
+  content: "";
+  height:200vh;
+  width:50vw;
+  border-bottom-right-radius:200vh;
+  border-top-right-radius:200vh;
+  background-image:linear-gradient(to right,rgba(189, 0, 0, 0.9),rgba(170, 24, 24, 0.61));
+position: absolute;
+z-index: -1;
+}
+.logo1
+{ object-fit: cover;
+  width: 100%;
+  height: 100%;
+ 
+}
+.logoout
+{
+  width: 100px;
+  height: 100px;
+position: absolute;
+top: 80px;
+left: 280px;
+justify-content: center;
+}
+input[type="text"],select
+{ margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.411);
+  border-radius: 5px;
+  width: 400px;
+  height: 40px;
+  text-align: center;
+ color: #fff;
+
+}
+input[type="email"],select
+{
+  background-color: rgba(0, 0, 0, 0.411);
+  border-radius: 5px;
+  width: 400px;
+  height: 40px;
+  text-align: center;
+ color: #fff; 
+}
+.form-signin
+{ top: 300px;
+width: 350px;
+height: 400px;
+position: absolute;
+left: 130px;
+display: block;
+align-items: center;
+}
+
+
+input::placeholder
+{ font-family: 'Mukta Vaani', sans-serif;
+  color: #ffffffcb;
+}
+.subhead
+{ position: absolute;
+  top:180px;
+  left:10rem;
+ align-items: center;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+color: white;
+}
+
+.desgbut {background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%)}
+.desgbut {
+   margin: 10px;
+   padding: 15px 30px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px rgb(0, 0, 0);
+   border-radius: 10px;
+   display: block;
+   width:400px;
+   height: 50px;
+  position: absolute;
+  left: -5px;
+  top:180px;
+  }
+
+ .desgbut:hover {
+   background-position: left center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+   
+</style>
+</head>
+<body style="display: flex;">
     
     <h1 class="subhead">Sign Up For News Letter</h1>
     <div class="logoout"><img class="logo1" src="https://cryptologos.cc/logos/aave-aave-logo.png" width="80" height="80">
@@ -21,7 +143,7 @@
                 <input type="email" name="en" class="form-control" id="floatingPassword" placeholder="Email address" >
                 <button class="desgbut" type="submit">Sign in</button>
         </form>
-    <p class="cont">&copy; asTar</p>
+    <p class="copy-cont">&copy; ALSTAR & Co.</p>
     </div>
 </body>
 

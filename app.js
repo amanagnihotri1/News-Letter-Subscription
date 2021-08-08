@@ -1,9 +1,12 @@
+
 const express=require("express");
 const bodyParser=require("body-parser");
+const path=require("path");
 const request=require("request");
 const app=express();
 const https=require("https");
 const response = require("express");
+app.use(express.static(path.join(__dirname+"/assets/signup.css", 'public')));
 app.use(bodyParser.urlencoded({extended:true}));
 app.post("/",function(req,res)
 {  var firstname=req.body.fname;
@@ -28,7 +31,7 @@ app.post("/",function(req,res)
         auth:"01masteraman:e7ced4d6ff1ea90739665101c06fd3af-us6"
     }
     const jsonData = JSON.stringify(detail);
-    const url = "https://us6.api.mailchimp.com/3.0/lists/acc12b1602"
+    const url = "https://us6.api.mailchimp.com/3.0/lists/acc12b1602";
 const request=https.request(url,option,function(response)
 {if(response.statusCode==200)
 { res.sendFile(__dirname+"/success.html");
@@ -60,5 +63,3 @@ app.listen(process.env.PORT || 3000,function()
 { console.log("server is up");
 
 });
-//API KEY a411fd6965eaba34c4ec669fdd36edd3-us6
-// list id acc12b1602
